@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.StarWarsPersonDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/ivPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@android:string/unknownName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/ivPerson"
+            tools:text="NAME" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            tools:text="Gender" />
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvGender"
+            tools:text="1.50" />
+
+        <TextView
+            android:id="@+id/tvSpecie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeight"
+            tools:text="Human" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
